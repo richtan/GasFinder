@@ -101,6 +101,7 @@ export default function Home() {
           <div className="text-center">
             <div><b>{gasStation.name}</b></div>
             <div>{distance(location.split(',')[0], gasStation.geometry.location.lat, location.split(',')[1], gasStation.geometry.location.lng).toFixed(3)} km away</div>
+            <div>{gasStation.vicinity}</div>
             <div>Ratings: {gasStation.rating}</div>
             <hr />
           </div>
